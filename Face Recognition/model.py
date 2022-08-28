@@ -4,6 +4,8 @@ Created on Tue Aug 16 17:15:44 2022
 
 @author: berkan
 """
+#dataset link : https://dosya.co/6sm52bh5q1jb/data.zip.html
+
 
 from keras.models import Sequential
 from keras.layers import Conv2D

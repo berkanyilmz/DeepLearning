@@ -26,13 +26,7 @@ class Model:
         self.classifier.add(Conv2D(filters=256, kernel_size=5, padding='same', activation='relu'))
         self.classifier.add(MaxPooling2D(pool_size=3, strides=2))
         
-        #self.classifier.add(Conv2D(filters=384, kernel_size=3, padding='same', activation='relu'))
-        #self.classifier.add(Conv2D(filters=384, kernel_size=3, padding='same', activation='relu'))
-        #self.classifier.add(Conv2D(filters=256, kernel_size=3, padding='same', activation='relu'))
-        #self.classifier.add(MaxPooling2D(pool_size=3, strides=2))
-        
         self.classifier.add(Flatten())
-        #self.classifier.add(Dense(4096, activation='relu'))
         self.classifier.add(Dense(128, activation='relu'))
         
         self.classifier.add(Dense(1, activation='sigmoid'))
